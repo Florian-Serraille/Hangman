@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Hangman" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Hangman" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="C:/SDL/SDL2-2.0.5/i686-w64-mingw32/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Hangman" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/SDL/SDL2-2.0.5/i686-w64-mingw32/include/SDL2" />
+			<Add directory="C:/SDL/SDL2_ttf-2.0.14/i686-w64-mingw32/include/SDL2" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDL2main -lSDL2  -lSDL2_ttf" />
+			<Add directory="C:/SDL/SDL2-2.0.5/i686-w64-mingw32/lib" />
+			<Add directory="C:/SDL/SDL2_ttf-2.0.14/i686-w64-mingw32/lib" />
+		</Linker>
+		<Unit filename="headers/ftc.h" />
+		<Unit filename="headers/ftc_SDL.h" />
+		<Unit filename="headers/game.h" />
+		<Unit filename="headers/intro.h" />
+		<Unit filename="headers/menu.h" />
+		<Unit filename="sources/fct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sources/ftc_SDL.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sources/game.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sources/intro.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sources/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sources/menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
